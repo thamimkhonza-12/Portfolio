@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Thami Dlamini | Backend Developer</title>
+<title>Thamsanqa Dlamini | Backend Developer</title>
 
 <style>
 
@@ -14,6 +13,7 @@ font-family: Arial, sans-serif;
 margin:0;
 background:#0f172a;
 color:white;
+line-height:1.6;
 }
 
 nav{
@@ -23,6 +23,7 @@ width:100%;
 background:#020617;
 padding:15px;
 text-align:center;
+z-index:1000;
 }
 
 nav a{
@@ -33,7 +34,7 @@ font-size:14px;
 }
 
 header{
-padding:120px 20px;
+padding:140px 20px 100px;
 text-align:center;
 }
 
@@ -45,6 +46,11 @@ margin-bottom:10px;
 .subtitle{
 color:#94a3b8;
 font-size:20px;
+}
+
+.intro{
+color:#94a3b8;
+margin-top:10px;
 }
 
 .button{
@@ -83,7 +89,7 @@ border-radius:8px;
 
 .projects{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
 
@@ -103,11 +109,27 @@ text-decoration:none;
 margin-right:10px;
 }
 
+ul{
+color:#94a3b8;
+padding-left:18px;
+}
+
+pre{
+background:#020617;
+padding:15px;
+border-radius:8px;
+overflow:auto;
+}
+
 footer{
 text-align:center;
 padding:40px;
 background:#020617;
 color:#94a3b8;
+}
+
+a{
+color:#38bdf8;
 }
 
 @media(max-width:768px){
@@ -131,29 +153,37 @@ grid-template-columns:1fr;
 
 <header>
 
-<h1>Thami Dlamini</h1>
+<h1>Thamsanqa Dlamini</h1>
 
 <p class="subtitle">
-Backend Developer | Python | Django | REST APIs
+Junior Backend Developer | Python • Django • REST APIs
+</p>
+
+<p class="intro">
+I design and deploy RESTful APIs with authentication, database management, and real-world functionality.
 </p>
 
 <a class="button" href="#projects">View Projects</a>
 
 </header>
 
-
 <section id="about">
 
 <h2 class="section-title">About Me</h2>
 
 <p>
-Backend developer specializing in building scalable APIs using Python, Django, and Django REST Framework.
-I focus on clean architecture, authentication systems, and reliable backend services powering modern applications.
+I am a backend developer specializing in Python, Django, and Django REST Framework, with hands-on experience building and deploying RESTful APIs.
+</p>
+
+<p>
+I recently completed backend development training with ALX, where I developed real-world projects focused on authentication systems, database design, and scalable API architecture.
+</p>
+
+<p>
+I bring over 10 years of professional experience in logistics and operations, demonstrating discipline, reliability, and strong problem-solving skills.
 </p>
 
 </section>
-
-
 
 <section id="skills">
 
@@ -165,16 +195,15 @@ I focus on clean architecture, authentication systems, and reliable backend serv
 <div class="skill">Django</div>
 <div class="skill">Django REST Framework</div>
 <div class="skill">PostgreSQL</div>
-<div class="skill">Docker</div>
-<div class="skill">Git</div>
-<div class="skill">Linux</div>
 <div class="skill">REST APIs</div>
+<div class="skill">JWT Authentication</div>
+<div class="skill">Git & GitHub</div>
+<div class="skill">Postman</div>
+<div class="skill">Render (Deployment)</div>
 
 </div>
 
 </section>
-
-
 
 <section id="projects">
 
@@ -182,94 +211,104 @@ I focus on clean architecture, authentication systems, and reliable backend serv
 
 <div class="projects">
 
-
 <div class="project-card">
 
 <h3>Task Management API</h3>
 
 <p>
-REST API allowing users to register, login, create tasks, set priorities and manage productivity.
+RESTful API for managing user tasks with secure JWT authentication and user-specific data access.
 </p>
 
-<p><strong>Tech:</strong> Django, DRF, PostgreSQL</p>
+<ul>
+<li>JWT authentication and user authorization</li>
+<li>Full CRUD operations for tasks</li>
+<li>User-specific data isolation</li>
+<li>Filtering and search functionality</li>
+<li>Tested using Postman</li>
+</ul>
+
+<p><strong>Tech:</strong> Django, Django REST Framework, PostgreSQL</p>
 
 <div class="project-links">
-
-<a href="#">GitHub</a>
-<a href="#">API Docs</a>
-
+<a href="https://github.com/thamimkhonza-12/Alx_BE_Capstone.git" target="_blank">GitHub</a>
 </div>
 
 </div>
-
-
 
 <div class="project-card">
 
-<h3>Smart Community Resource Finder</h3>
+<h3>Community Resource Finder API</h3>
 
 <p>
-API that helps communities find nearby services such as clinics, shelters and food banks.
+API that allows users to locate nearby community services using geolocation-based search.
 </p>
 
-<p><strong>Tech:</strong> Django, REST API, PostgreSQL</p>
+<ul>
+<li>Location-based search using Haversine formula</li>
+<li>CRUD endpoints with filtering</li>
+<li>Optimized database queries</li>
+<li>Deployed on Render</li>
+</ul>
+
+<p><strong>Tech:</strong> Django, Django REST Framework, PostgreSQL</p>
 
 <div class="project-links">
-
-<a href="#">GitHub</a>
-
+<a href="https://github.com/thamimkhonza-12/Comunity_resource_finder.git" target="_blank">GitHub</a>
 </div>
 
 </div>
-
-
-
-<div class="project-card">
-
-<h3>Authentication Service API</h3>
-
-<p>
-Secure authentication API with JWT login, password reset and user management.
-</p>
-
-<p><strong>Tech:</strong> Django, JWT, DRF</p>
-
-<div class="project-links">
-
-<a href="#">GitHub</a>
-
-</div>
-
-</div>
-
 
 </div>
 
 </section>
 
+<section>
 
+<h2 class="section-title">API Example</h2>
+
+<p>
+Example endpoint from Community Resource Finder:
+</p>
+
+<pre>
+GET /api/resources/nearby/?lat=-29.8587&lng=31.0218
+
+Response:
+[
+  {
+    "name": "Community Clinic",
+    "distance": "2.3 km"
+  }
+]
+</pre>
+
+</section>
 
 <section id="contact">
 
 <h2 class="section-title">Contact</h2>
 
-<p>Email: thamidlamini544@gmail.com</p>
+<p>Email: <a href="mailto:thamidlamini544@gmail.com">thamidlamini544@gmail.com</a></p>
 
-<p>GitHub: https://github.com/thamimkhonza-12</p>
+<p>GitHub: 
+<a href="https://github.com/thamimkhonza-12" target="_blank">
+github.com/thamimkhonza-12
+</a>
+</p>
 
-<p>LinkedIn: https://linkedin.com/in/thami-dlamini</p>
+<p>LinkedIn: 
+<a href="https://linkedin.com/in/thami-dlamini" target="_blank">
+linkedin.com/in/thami-dlamini
+</a>
+</p>
 
 </section>
 
-
-
 <footer>
 
-<p>© 2026 Thami Dlamini | Backend Developer</p>
+<p>© 2026 Thamsanqa Dlamini | Backend Developer</p>
 
 </footer>
 
-
 </body>
-
 </html>
